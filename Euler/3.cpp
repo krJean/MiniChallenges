@@ -7,7 +7,7 @@ bool isPrime(long num)
 		return true;
 	if(num%2 == 0)
 		return false;
-	for(long i = 3; i < sqrt(num); i+=2)
+	for(long i = 3; i <= sqrt(num); i+=2)
 	{
 		if(num%i == 0)
 			return false;
